@@ -88,7 +88,7 @@
       {
         "scope": "variable.other.property",
         "settings": {
-          "foreground": "#90EE90"
+          "foreground": "#7FFFD4"
         }
       },
       // {
@@ -440,7 +440,7 @@
       {
         "scope": "support.type.property-name.css",
         "settings": {
-          "foreground": "#E6E6E6"
+          "foreground": "#7FFFD4"
         }
       },
       {
