@@ -1,0 +1,9 @@
+[user]
+	email = tanachot.u@lmwn.com
+    name = tanachot.u
+
+[url "ssh://git@git.wndv.co:10022/"]
+    insteadOf = https://git.wndv.co/
+
+[core]
+	hooksPath = /Users/lmwn/.githooks

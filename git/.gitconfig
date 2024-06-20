@@ -1,0 +1,11 @@
+[alias]
+    # theme
+    graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
+    graph2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+    krakend = log --graph --oneline --decorate --all --color --pretty=format:'%C(yellow)%h%C(reset) -%C(cyan)%d%C(reset) %s %C(green)(%cr) %C(bold blue)<%an>%C(reset)'
+
+[includeIf "gitdir:/Users/lmwn/"]
+    path = ~/.gitconfig-personal
+
+[includeIf "gitdir:/Users/lmwn/lineman/"]
+    path = ~/.gitconfig-lmwn
