@@ -1,0 +1,35 @@
+{
+	"name": "jetbrains-rider-dark-theme",
+	"displayName": "JetBrains Rider Dark Theme",
+	"description": "JetBrains Rider Dark Theme for Visual Studio Code",
+	"repository": "https://github.com/edsulaiman/jetbrains-rider-dark-theme",
+	"version": "1.0.2",
+	"publisher": "EdwinSulaiman",
+	"icon": "images/rider_logo.png",
+	"engines": {
+		"vscode": "^1.67.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "JetBrains Rider Dark Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/JetBrains Rider Dark Theme-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "ad509de7-5a9b-43b1-8519-ba9932a1e18a",
+		"publisherId": "64eb90e6-3972-4cb2-a60d-58c686d5221d",
+		"publisherDisplayName": "Edwin Sulaiman",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1715087634073,
+		"source": "gallery"
+	}
+}
