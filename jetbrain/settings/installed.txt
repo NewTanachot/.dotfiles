@@ -1,0 +1,3 @@
+net.antelle.intellij-xcode-dark-theme
+com.elliotwaite.godot_theme
+Rider UI Theme Pack

@@ -1,0 +1,11 @@
+<application>
+  <component name="LafManager">
+    <laf themeId="RiderNight" />
+    <lafs-to-previous-schemes>
+      <laf-to-scheme laf="3d56083a-ab9f-43e1-a3d6-3dec6b1a424c" scheme="Rider Dark copy" />
+      <laf-to-scheme laf="ExperimentalDark" scheme="Rider Dark copy" />
+      <laf-to-scheme laf="ExperimentalLight" scheme="_@user_Solarized (light)" />
+      <laf-to-scheme laf="RiderNight" scheme="Custom Rider Dark " />
+    </lafs-to-previous-schemes>
+  </component>
+</application>

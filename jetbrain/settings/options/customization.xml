@@ -1,0 +1,23 @@
+<application>
+  <component name="com.intellij.ide.ui.customization.CustomActionsSchema">
+    <group value="Back" is_action="true" action_type="1" position="3">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Left" />
+    </group>
+    <group value="Forward" is_action="true" action_type="1" position="4">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Left" />
+    </group>
+    <group value="Back" is_action="true" action_type="1" position="9">
+      <path value="root" />
+      <path value="Navigation Bar Toolbar" />
+    </group>
+    <group value="Forward" is_action="true" action_type="1" position="10">
+      <path value="root" />
+      <path value="Navigation Bar Toolbar" />
+    </group>
+    <action id="MainMenu" icon="jar:file:/Users/lmwn/Applications/GoLand.app/Contents/lib/app-client.jar!/expui/toolbar/unknown.svg" />
+  </component>
+</application>

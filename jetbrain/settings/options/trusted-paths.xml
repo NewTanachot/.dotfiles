@@ -1,0 +1,38 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/lineman/admin-tools-front" value="true" />
+        <entry key="$USER_HOME$/lineman/ceylon-lm" value="true" />
+        <entry key="$USER_HOME$/lineman/coupon" value="true" />
+        <entry key="$USER_HOME$/lineman/kym" value="true" />
+        <entry key="$USER_HOME$/lineman/lineman-auth" value="true" />
+        <entry key="$USER_HOME$/lineman/lineman-bff-web" value="true" />
+        <entry key="$USER_HOME$/lineman/lineman-search" value="true" />
+        <entry key="$USER_HOME$/lineman/lmr-service" value="true" />
+        <entry key="$USER_HOME$/lineman/modular" value="true" />
+        <entry key="$USER_HOME$/lineman/mongo-migrator" value="true" />
+        <entry key="$USER_HOME$/lineman/mongodb" value="true" />
+        <entry key="$USER_HOME$/lineman/proto" value="true" />
+        <entry key="$USER_HOME$/lineman/restaurant-go-bff" value="true" />
+        <entry key="$USER_HOME$/lineman/reward-service" value="true" />
+        <entry key="$USER_HOME$/lineman/store-service" value="true" />
+        <entry key="$USER_HOME$/lineman/temp/temp-store-service" value="true" />
+        <entry key="$USER_HOME$/lineman/web-merchant-proxy" value="true" />
+        <entry key="$USER_HOME$/tanachot/amaze/amaze-order-service" value="true" />
+        <entry key="$USER_HOME$/tanachot/project/KBTG assignment" value="true" />
+        <entry key="$USER_HOME$/tanachot/project/learn-go-grpc" value="true" />
+        <entry key="$USER_HOME$/tanachot/project/learn-go-wire" value="true" />
+        <entry key="$USER_HOME$/tanachot/project/pokemon-game-api" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/tanachot/project" />
+        <option value="$USER_HOME$/lineman" />
+      </list>
+    </option>
+  </component>
+</application>

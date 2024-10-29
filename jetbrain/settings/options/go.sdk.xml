@@ -1,0 +1,11 @@
+<application>
+  <component name="GoSdkList">
+    <sdk-url>
+      <set>
+        <option value="file://$USER_HOME$/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.22.6.darwin-arm64" />
+        <option value="file://$USER_HOME$/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.2.darwin-arm64" />
+        <option value="file:///opt/homebrew/Cellar/go/1.22.3/libexec" />
+      </set>
+    </sdk-url>
+  </component>
+</application>

@@ -1,0 +1,124 @@
+<scheme name="_@user_Rider Dark" version="142" parent_scheme="Darcula">
+  <metaInfo>
+    <property name="ide">GoLand</property>
+    <property name="ideVersion">2024.1.1.0.0</property>
+    <property name="originalScheme">Rider Dark</property>
+    <property name="partialSave">true</property>
+    <property name="pluginId">Rider UI Theme Pack</property>
+  </metaInfo>
+  <attributes>
+    <option name="DEFAULT_BLOCK_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="767982" />
+      </value>
+    </option>
+    <option name="DEFAULT_LINE_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="767982" />
+      </value>
+    </option>
+    <option name="DOCKER_COMMENTS" baseAttributes="DEFAULT_LINE_COMMENT" />
+    <option name="GO_BUILTIN_CONSTANT">
+      <value>
+        <option name="FOREGROUND" value="6c95eb" />
+      </value>
+    </option>
+    <option name="GO_BUILTIN_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
+    <option name="GO_BUILTIN_TYPE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="6c95eb" />
+      </value>
+    </option>
+    <option name="GO_BUILTIN_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="6c95eb" />
+      </value>
+    </option>
+    <option name="GO_EXPORTED_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
+    <option name="GO_EXPORTED_INTERFACE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="c191ff" />
+      </value>
+    </option>
+    <option name="GO_EXPORTED_STRUCT_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="c191ff" />
+      </value>
+    </option>
+    <option name="GO_LOCAL_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
+    <option name="GO_LOCAL_INTERFACE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="c191ff" />
+      </value>
+    </option>
+    <option name="GO_LOCAL_STRUCT_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="c191ff" />
+      </value>
+    </option>
+    <option name="GO_METHOD_RECEIVER">
+      <value>
+        <option name="FOREGROUND" value="e1bfff" />
+      </value>
+    </option>
+    <option name="GO_PACKAGE">
+      <value>
+        <option name="FOREGROUND" value="e1bfff" />
+      </value>
+    </option>
+    <option name="GO_SHADOWING_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="GO_STRUCT_EXPORTED_MEMBER">
+      <value>
+        <option name="FOREGROUND" value="66c3cc" />
+      </value>
+    </option>
+    <option name="GO_STRUCT_LOCAL_MEMBER">
+      <value>
+        <option name="FOREGROUND" value="66c3cc" />
+      </value>
+    </option>
+    <option name="GO_TYPE_REFERENCE" baseAttributes="DEFAULT_CLASS_REFERENCE" />
+    <option name="GO_VALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="66c3cc" />
+      </value>
+    </option>
+    <option name="JSON.BLOCK_COMMENT" baseAttributes="DEFAULT_BLOCK_COMMENT" />
+    <option name="JSON.LINE_COMMENT" baseAttributes="DEFAULT_LINE_COMMENT" />
+    <option name="JSON.VALID_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="e1bfff" />
+      </value>
+    </option>
+    <option name="MAKEFILE_DOCCOMMENT">
+      <value>
+        <option name="FOREGROUND" value="767982" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="PROTO_VALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="66c3cc" />
+      </value>
+    </option>
+    <option name="SQL_COMMENT" baseAttributes="DEFAULT_LINE_COMMENT" />
+    <option name="TS.BLOCK_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="767982" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="TS.LINE_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="767982" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="YAML_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="767982" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+  </attributes>
+</scheme>
