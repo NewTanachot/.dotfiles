@@ -1,0 +1,101 @@
+#!/bin/sh
+
+# Define the allowed remote domain in this array
+ALLOWED_URLS=("git.wndv.co" "git.linecorp.com")
+# ALLOWED_URLS=("git.wndv.co" "git.linecorp.com" "github.com")
+
+# Define the allowed users
+# Example: ALLOWED_USERS=("john.e" "john.cs")
+ALLOWED_USERS=("Tanachot (New) Udomsartporn")
+# ALLOWED_USERS=("tanachot.u")
+
+# Define the target parent directory
+TARGET_DIR="/Users/lmwn/lineman-wongnai"
+# Get the top-level directory of the current repository
+REPO_DIR=$(git rev-parse --show-toplevel)
+
+# Check if the repository is inside the target directory
+if [[ "$REPO_DIR" != "$TARGET_DIR"* ]]; then
+    echo "[Pre-push] Repository not in target directory ($TARGET_DIR). Skipping hook."
+    exit 0  # Exit successfully without running the hook
+fi
+
+# Getter functions
+get_remote_url() {
+    git remote get-url "$1"
+}
+
+get_remote_domain() {
+    if [[ "$1" =~ ^ssh ]]; then 
+        echo "$1" | awk -F '[@/:]' '{print $5}'
+    elif [[ "$1" =~ ^https ]]; then
+        echo "$1" | awk -F '[/:]' '{print $4}'
+    else
+        echo "Invalid URL format"
+    fi
+}
+
+get_remote_username() {
+    git config user.name
+}
+
+# Validating functions
+is_allowed_domain() {
+    local domain="$1"
+    for allowed_url in "${ALLOWED_URLS[@]}"; do
+        if [[ "$domain" == "$allowed_url"* ]]; then
+            return 0
+        fi
+    done
+    return 1
+}
+
+is_allowed_user() {
+    local user="$1"
+    for allowed_user in "${ALLOWED_USERS[@]}"; do
+        if [ "$user" == "$allowed_user" ]; then
+            return 0
+        fi
+    done
+    return 1
+}
+
+check_allowed_users() {
+    if [ "${#ALLOWED_USERS[@]}" -eq 0 ]; then
+        echo "[Pre-push] ALLOWED_USERS array is not initialized with usernames. Please define usernames before using."
+        exit 1
+    fi
+}
+
+# Check if the ALLOWED_USERS array is initialized
+check_allowed_users
+
+# Pre-push trigger here
+while read -r local_ref local_sha remote_ref remote_sha
+do
+    remote_name=$(git for-each-ref --format='%(upstream:remotename)' "$remote_ref")
+    remote_name=${remote_name:-$(git remote)}
+    remote_url=$(get_remote_url "$remote_name")
+    remote_domain=$(get_remote_domain "$remote_url")
+    remote_username=$(get_remote_username "$remote_url")
+
+    if ! is_allowed_domain "$remote_domain"; then
+        echo "[Pre-push] Pushing to unauthorized domain: $remote_domain"
+        exit 1
+    fi
+
+    if ! is_allowed_user "$remote_username"; then
+        echo "[Pre-push] Pushing from unauthorized user: $remote_username"
+        exit 1
+    fi
+done
+
+# Invoke local hook if exists
+WORK_DIR=$(git rev-parse --show-toplevel)
+if [ -e "$WORK_DIR/.git/hooks/pre-push" ]; then
+    $WORK_DIR/.git/hooks/pre-push "$@"
+else
+    # No local hook found
+    # Exit with success status
+    exit 0
+fi

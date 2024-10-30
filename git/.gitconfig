@@ -23,5 +23,5 @@
 	program = ssh-keygen
 	allowedSignersFile = 
 
-[includeIf "gitdir:/Users/lmwn/lineman-wongnai/"]
+[core]
     hooksPath = /Users/lmwn/.githooks
