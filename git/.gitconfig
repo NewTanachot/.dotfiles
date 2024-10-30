@@ -2,6 +2,8 @@
     graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
     graph2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
     krakend = log --graph --oneline --decorate --all --color --pretty=format:'%C(yellow)%h%C(reset) -%C(cyan)%d%C(reset) %s %C(green)(%cr) %C(bold blue)<%an>%C(reset)'
+    name = config --get user.name
+    mail = config --get user.email
 
 [url "ssh://git@git.wndv.co:10022/"]
     insteadOf = https://git.wndv.co/
@@ -9,8 +11,8 @@
 # LWMN git manage by git krakend workspace instead 
 # It will auto update when change gitkrakend workspace :>
 [user]
-	email = TanachotNew2543@gmail.com
-	name = NewTanachot
+	email = tanachot.u@lmwn.com
+	name = Tanachot (New) Udomsartporn
 	signingKey = 
 [gpg]
 	format = openpgp
