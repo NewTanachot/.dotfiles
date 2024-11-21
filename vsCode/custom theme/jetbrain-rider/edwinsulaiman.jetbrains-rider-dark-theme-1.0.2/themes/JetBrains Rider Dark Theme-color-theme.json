@@ -177,6 +177,9 @@
                 "foreground": "#c9a26d"
             }
         },
+        // ===== [ TIP OF THE DAY ] =====
+        // if token scope variable not showing, just set all of the attr they give and check token again it will show!
+
         // custom class in HTLM
         {
             "scope": "entity.other.attribute-name",
@@ -201,6 +204,13 @@
         // custom const (boolean, null, nil)
         {
             "scope": "constant.language",
+            "settings": {
+                "foreground": "#6c95eb"
+            }
+        },
+        // custom typescript type annotation
+        {
+            "scope": "support.type.primitive.tsx",
             "settings": {
                 "foreground": "#6c95eb"
             }
